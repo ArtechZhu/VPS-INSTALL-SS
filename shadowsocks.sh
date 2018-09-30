@@ -13,7 +13,7 @@ clear
 
 
 libsodium_file="libsodium-1.0.16"
-libsodium_url="https://raw.githubusercontent.com/ArtechChu/SS/master/lib/libsodium-1.0.16.tar.gz"
+libsodium_url="https://raw.githubusercontent.com/ArtechChu/VPS-INSTALL-SS/master/lib/libsodium-1.0.16.tar.gz"
 
 # Current folder
 cur_dir=`pwd`
@@ -233,18 +233,18 @@ download_files(){
         exit 1
     fi
     # Download Shadowsocks file
-    if ! wget --no-check-certificate -O shadowsocks-master.zip https://raw.githubusercontent.com/ArtechChu/SS/master/lib/shadowsocks-master.zip; then
+    if ! wget --no-check-certificate -O shadowsocks-master.zip https://raw.githubusercontent.com/ArtechChu/VPS-INSTALL-SS/master/lib/shadowsocks-master.zip; then
         echo -e "[${red}Error${plain}] Failed to download shadowsocks python file!"
         exit 1
     fi
     # Download Shadowsocks init script
     if check_sys packageManager yum; then
-        if ! wget --no-check-certificate https://raw.githubusercontent.com/ArtechChu/SS/master/shadowsocks -O /etc/init.d/shadowsocks; then
+        if ! wget --no-check-certificate https://raw.githubusercontent.com/ArtechChu/VPS-INSTALL-SS/master/shadowsocks -O /etc/init.d/shadowsocks; then
             echo -e "[${red}Error${plain}] Failed to download shadowsocks chkconfig file!"
             exit 1
         fi
     elif check_sys packageManager apt; then
-        if ! wget --no-check-certificate https://raw.githubusercontent.com/ArtechChu/SS/master/shadowsocks-debian -O /etc/init.d/shadowsocks; then
+        if ! wget --no-check-certificate https://raw.githubusercontent.com/ArtechChu/VPS-INSTALL-SS/master/shadowsocks-debian -O /etc/init.d/shadowsocks; then
             echo -e "[${red}Error${plain}] Failed to download shadowsocks chkconfig file!"
             exit 1
         fi

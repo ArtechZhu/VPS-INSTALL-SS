@@ -1,7 +1,7 @@
 # 在VPS上安装SS Server
 ## 安装
 ```javascript
-> wget –no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/ArtechChu/SS/master/shadowsocks.sh
+> wget –no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/ArtechChu/VPS-INSTALL-SS/master/shadowsocks.sh
 
 > chmod +x shadowsocks.sh
 
@@ -30,7 +30,7 @@
 
 ## 安装
 ```javascript
-> wget --no-check-certificate https://raw.githubusercontent.com/ArtechChu/SS/master/bbr.sh
+> wget --no-check-certificate https://raw.githubusercontent.com/ArtechChu/VPS-INSTALL-SS/master/bbr.sh
 > chmod +x bbr.sh
 > ./bbr.sh
 ```
