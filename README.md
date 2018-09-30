@@ -1,4 +1,4 @@
-# 安装SS Server
+# 在VPS上安装SS Server
 ## 安装
 ```javascript
 > wget –no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/ArtechChu/SS/master/shadowsocks.sh
@@ -23,6 +23,11 @@
 ```
 
 # 安装 BBR
+前置条件：
+- 需要linux内核4.9以上
+- 需要KVM架构的VPS（目前vultr没什么问题）
+
+
 ## 安装
 ```javascript
 > wget --no-check-certificate https://raw.githubusercontent.com/ArtechChu/SS/master/bbr.sh
